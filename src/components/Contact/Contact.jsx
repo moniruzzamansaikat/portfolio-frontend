@@ -21,6 +21,7 @@ function Contact() {
     setErrors(errors)
 
     const data = { name, email, message }
+    console.log(data)
 
     if (!Object.keys(errors).length) {
       setShowSuccess(true)
