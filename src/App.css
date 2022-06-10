@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap');
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  color: #f0f0f0;
+  background-color: #082032;
+}
+
+body * {
+  color: #f0f0f0;
+}
+
+:root {
+  --primary-color: #03c4a1;
+  --secondary-color: rgb(250, 234, 91);
+  --clr-red: #f24a72;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #eeeeee;
+}
+
+.btn {
+  box-shadow: 0 0 0 !important;
+  padding: 6px 1rem;
+  background-color: var(--primary-color) !important;
+  border: 2px solid var(--primary-color) !important;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:focus {
+  background-color: var(--primary-color);
+}
+
+section {
+  padding: 2rem 0;
+  margin: 2rem 0;
+}
+
+.form-control {
+  border-radius: 0 !important;
+  box-shadow: 0 0 0 !important;
+  border: 0;
+  background: #ffffff;
+  border-bottom: solid #afafaf;
+  padding-left: 0;
+}
+
+.form-control:focus {
+  border-color: #afafaf;
+}
+
+label {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+section p {
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  padding-bottom: 8px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.subtitle::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary-color);
+  left: 0;
+  bottom: -3px;
+  border-radius: 30px;
+}
+
+/* hide statcounter  */
+.statcounter {
+  display: none;
+}
+
+a[href*='statcounter.com'] {
+  display: none !important;
+}
